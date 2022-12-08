@@ -24,7 +24,3 @@ submit.addEventListener("click", () => {
     block2.classList.remove("Thanks")
 })
 
-for(i=0; i<5; i++){
-    console.log(btn[i])
-    btn[i].classList.remove("active")
-}
