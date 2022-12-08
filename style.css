@@ -1,0 +1,144 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Overpass ;
+}
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(0, 0%, 24%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Grey: hsl(216, 12%, 54%);
+}
+
+
+/* desktop notation design */
+body {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    width: 25%;
+    width: 345px;
+}
+.star {
+    margin-bottom: 30px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    margin-bottom: 30px;
+}
+.text h1 {
+    color: var(--White);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: start;
+}
+.text p {
+    color: var(--Light-Grey);
+    line-height: 1.5rem;
+    text-align: start;
+}
+.notations {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.active {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.btn:hover {
+    background-color: var(--Grey);
+}
+.submit {
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+/* desktop Thanks you design */
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.image-center {
+    margin: 20px;
+}
+.note {
+    background-color: var(--Medium-Grey);
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.note p {
+    color: var(--Orange);
+    padding: 5px 20px;
+}
+.center .text h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.center .text p {
+    text-align: center;
+}
+
+
+
+
+
+/* interative part */
+.rating {
+    display: none;
+}
+.Thanks {
+    display: none;
+}
+
+
+/* media */
+@media screen and (max-width:375px) {
+    .container {
+        width: 300px;
+    }
+}
